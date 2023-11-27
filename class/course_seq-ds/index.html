@@ -60,16 +60,31 @@
 		<button type="button" class="color-1" onclick="read_1()">Leitura 1</button>
 		<button type="button" class="color-1" onclick="task_1()">Atividade 1</button>
 		
-		<button type="button" class="color-1" onclick="class_2()">Aula 1</button>
-		<button type="button" class="color-1" onclick="read_2()">Leitura 1</button>
-		<button type="button" class="color-1" onclick="task_2()">Atividade 1</button>
+		<button type="button" class="color-1" onclick="class_2()">Aula 2</button>
+		<button type="button" class="color-1" onclick="read_2()">Leitura 2</button>
+		<button type="button" class="color-1" onclick="task_2()">Atividade 2</button>
 
-		<button type="button" class="color-1" onclick="class_3()">Aula 1</button>
-		<button type="button" class="color-1" onclick="read_3()">Leitura 1</button>
-		<button type="button" class="color-1" onclick="task_3()">Atividade 1</button>
+		<button type="button" class="color-1" onclick="class_3()">Aula 3</button>
+		<button type="button" class="color-1" onclick="read_3()">Leitura 3</button>
+		<button type="button" class="color-1" onclick="task_3()">Atividade 3</button>
 	</aside>
+	
 	<section class="youtube">
-		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?si=J1V86ael92G1ycqX&amp;list=PLQ3VRcM8cAuy293tprPLgLQzNPDKXP1-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>		
+		<iframe id="player" width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?si=J1V86ael92G1ycqX&amp;list=PLQ3VRcM8cAuy293tprPLgLQzNPDKXP1-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>		
 	</section>
-</body>
+
+	<script>
+		function class_1() { document.getElementById('player').setAttribute("src", "https://www.youtube.com/embed/videoseries?si=J1V86ael92G1ycqX&amp;list=PLQ3VRcM8cAuy293tprPLgLQzNPDKXP1-A"); }
+		function class_2() { document.getElementById('player').setAttribute("src", "https://www.youtube.com/embed/6aVvOUR86Mc?si=BbRSAG9Y1E3fhZG7"); }
+		function class_3() { document.getElementById('player').setAttribute("src", "https://www.youtube.com/embed/980oK0cCm_M?si=_lSY16tqDHY0kffq"); }
+		
+		function read_1() { document.getElementById('player').setAttribute("src", "https://drive.google.com/file/d/1DNMPtTaTEZ6SvIup1c9BaVu5nyGYFYHR/preview"); }
+		function read_2() { document.getElementById('player').setAttribute("src", "https://drive.google.com/file/d/1swH5ZhGpd1dFsueNJWWdAXO3D15zdfLo/preview"); }
+		function read_3() { document.getElementById('player').setAttribute("src", "https://drive.google.com/file/d/1-Olb9vS2zB6MGg8jSsN9Uav8qWlLFtfi/preview"); }
+
+		function task_1() { document.getElementById('player').setAttribute("src", "https://docs.google.com/forms/d/e/1FAIpQLSduR2vyZmsYoKK8ocqzFk1xs6pYAzwlTJbmcG8WI-5uEckO5A/viewform?embedded=true"); }
+		function task_2() { document.getElementById('player').setAttribute("src", "https://docs.google.com/forms/d/e/1FAIpQLSe9ZGHiq0kT9GIr91sONbAJAD3ts50ph_WRtll3447H1R2KbQ/viewform?embedded=true"); }
+		function task_3() { document.getElementById('player').setAttribute("src", "https://docs.google.com/forms/d/e/1FAIpQLScmpihcja5-RgBBn0zwdAz3VB85zOJ4k6K8BESIObt06Vf2dQ/viewform?embedded=true"); }
+	</script>
 </html>
+
