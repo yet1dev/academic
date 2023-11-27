@@ -13,23 +13,30 @@
 		text-align: center;
 		vertical-align: middle;	}
 
+	body{
+		background-color: #e5e5f7;
+		background-image:  radial-gradient(#4e6261 0.8500000000000001px, transparent 0.8500000000000001px), radial-gradient(#4e6261 0.8500000000000001px, #e5e5f7 0.8500000000000001px);
+		background-size: 34px 34px;
+		background-position: 0 0,17px 17px;
+	}
+
 	body > section{
-		margin: auto;
-		height: 96vh;
 		margin-top: 1vh;
+		width: 85vw;
+		aspect-ratio: 16/9;
 		background: #999;
 		border-radius: 2%;
-		aspect-ratio: 9/16;
-		border: outset #000 0.7vh; 
+		border: outset #000 0.4vw;
+		display: inline-block;
 	}
 
 	h1 { 
-		font-size: 2.4vh;
-		padding-top: 2.5vh; }
+		font-size: 1.5vw;
+		padding-top: 0.6vw; }
 
 	header {
 		color: #fff;
-		height: 8vh;
+		height: 3vw;
 		display: block;
 		background: #222; 
 		border-radius: 2%; }
@@ -39,25 +46,18 @@
 		width: 20vw;
 		background: #aaa;
 		padding: 0.7vh 0.3vh;	}
+
+
 </style>
 </head>
 
 <body>
-	<section>
+	<section class="youtube">
 		<header>
 			<h1>Curso de Estruturas de Dados Sequenciais</h1>
 		</header>
 
-		<section>
-			<nav>
-				<a href="#class-1">Aula 1</a><br>
-				<a href="#class-2">Aula 2</a><br>
-				<a href="#class-3">Aula 3</a><br>
-			</nav>
-		</section>
-		<article>
-
-		</article>
-	<section>
+		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?si=J1V86ael92G1ycqX&amp;list=PLQ3VRcM8cAuy293tprPLgLQzNPDKXP1-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>		
+	</section>
 </body>
 </html>
