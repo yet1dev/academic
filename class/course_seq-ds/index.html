@@ -41,8 +41,24 @@
 		background: #444;
 		position: absolute; }
 
+	h2{
+		color: #ccc;
+		margin: 0.5vh;
+		font-size: 2vh;
+		border-bottom: double #000 0.5vh;}
+	
+	button        { background: #ddd; }
+	button:hover  { background: #999; }
+
+	.color-1:focus  { background: #9dc; }
+	.color-2:focus  { background: #dc9; }
+	.color-3:focus  { background: #d99; }
+
 	button{ 
+		margin: 0.5vh;
+		margin-left: 3vw;
 		width: 15vw;
+		padding: 0.5vh;
 		margin-left: 1vw; 
 		display: inline-block; }
 
@@ -68,17 +84,20 @@
 		<h1>Curso de Estruturas de Dados Sequenciais</h1>
 	</header>
 	<aside>
+		<h2>Modulo 1</h2>
 		<button type="button" class="color-1" onclick="class_1()">Aula 1</button>
 		<button type="button" class="color-1" onclick="read_1()">Leitura 1</button>
 		<button type="button" class="color-1" onclick="task_1()">Atividade 1</button>
-		
-		<button type="button" class="color-1" onclick="class_2()">Aula 2</button>
-		<button type="button" class="color-1" onclick="read_2()">Leitura 2</button>
-		<button type="button" class="color-1" onclick="task_2()">Atividade 2</button>
 
-		<button type="button" class="color-1" onclick="class_3()">Aula 3</button>
-		<button type="button" class="color-1" onclick="read_3()">Leitura 3</button>
-		<button type="button" class="color-1" onclick="task_3()">Atividade 3</button>
+		<h2>Modulo 2</h2>
+		<button type="button" class="color-2" onclick="class_2()">Aula 2</button>
+		<button type="button" class="color-2" onclick="read_2()">Leitura 2</button>
+		<button type="button" class="color-2" onclick="task_2()">Atividade 2</button>
+
+		<h2>Modulo 3</h2>
+		<button type="button" class="color-3" onclick="class_3()">Aula 3</button>
+		<button type="button" class="color-3" onclick="read_3()">Leitura 3</button>
+		<button type="button" class="color-3" onclick="task_3()">Atividade 3</button>
 	</aside>
 	
 	<section>
